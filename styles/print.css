@@ -1,0 +1,24 @@
+nav, footer, video, figcaption {
+  display: none;
+}
+
+.container, article {
+  width: 100%;
+}
+
+a[href^="http://"]:after, 
+a[href^="https://"]:after {
+ content: " (" attr(href) ")";
+  font-size: 80%;
+}
+
+
+a[href^="#"]:after {
+ content: "";
+}
+/*^ means starts with #*/
+
+figure {
+  margin-right: 2rem;
+  float: left;
+}
